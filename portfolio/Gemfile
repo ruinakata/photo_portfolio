@@ -38,6 +38,8 @@ gem 'mini_magick', '~> 4.3'
 # gem 'capistrano-rails', group: :development
 
 gem 'byebug'
+# for uploading files to s3
+gem 'fog'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views

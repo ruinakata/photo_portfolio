@@ -1,10 +1,20 @@
 class PhotosController < ApplicationController
 
   def new
+    tags = Tag.all
+    @tags = ""
+    tags.each do |tag|
+      @tags = @tags + "##{tag.name} "
+    end
+    puts "TAGS: #{@tags}"
   end
 
   def show
     @photo = Photo.find(params[:id])
+  end
+
+  def index
+    @photos = Photo.all
   end
 
   def create

@@ -1,0 +1,10 @@
+
+<div>
+  <div id="feed-container">
+    <% @photos.each do |photo| %>
+      <div class="feed-photo-container">
+        <%= image_tag photo.image.medium.url, class: "feed-photo" %>
+      </div>
+    <% end %>
+  </div>
+<div>

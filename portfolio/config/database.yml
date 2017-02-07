@@ -29,6 +29,11 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-# production:
-#   <<: *default
-#   database: db/production.sqlite3
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: portfolio_prod
+  pool: 5
+  username: rui.nakata
+  password:
+  timeout: 5000
