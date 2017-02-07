@@ -3,7 +3,9 @@
   <div id="feed-container">
     <% @photos.each do |photo| %>
       <div class="feed-photo-container">
-        <%= image_tag photo.image.medium.url, class: "feed-photo" %>
+        <%= link_to photo_path(photo) do %>
+          <%= image_tag photo.image.medium.url, class: "feed-photo" %>
+        <% end %>
       </div>
     <% end %>
   </div>
