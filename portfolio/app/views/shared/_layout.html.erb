@@ -1,12 +1,22 @@
 
-<div>
-  <div id="feed-container">
-    <% @photos.each do |photo| %>
-      <div class="feed-photo-container">
-        <%= link_to photo_path(photo) do %>
-          <%= image_tag photo.image.medium.url, class: "feed-photo" %>
-        <% end %>
-      </div>
-    <% end %>
+<div id="main-container" class="container">
+  <div class="row">
+
+    <div class="col-xs-1 sidebar">
+    </div>
+
+    <div id="content" class="col-xs-10 content">
+        <% @photos.each do |photo| %>
+              <div class="feed-photo-container">
+                <%= link_to photo_path(photo) do %>
+                  <%= image_tag photo.image.medium.url, class: "feed-photo" %>
+                <% end %>
+              </div>
+            <% end %>
+    </div>
+
+    <div class="col-xs-1 sidebar">
+    </div>
+
   </div>
-<div>
+</div>

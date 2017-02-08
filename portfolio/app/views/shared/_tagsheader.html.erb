@@ -1,4 +1,4 @@
-<div class="tags-container">
+<div class="tags-container container">
   <% @tags.each do |tag| %>
     <div class="tag-container">
       <%= link_to "#{tag.name}", tag_path(tag), class: "tag" %>

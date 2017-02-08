@@ -1,0 +1,67 @@
+@import "bootstrap-sprockets"
+@import "bootstrap"
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.sidebar
+  background-color: red
+
+.content
+  background-color: pink
+
+
+.feed-photo-container 
+  display: inline-block
+
+
+.feed-photo 
+  object-fit: cover /*centers in on the image and crops*/
+  width: 300px
+  height: 300px
+  padding: 3px 0px 0px 3px
+
+
+#feed-container 
+  padding-left: 10%
+  width: 90%
+  height: 100%
+
+.tags-container
+  width: 50%
+  margin-left: 25%
+  margin-top: 50px
+  margin-bottom: 50px
+
+.tag-container
+  padding: 5px 15px 5px 15px
+  clear: left
+  display: inline-block
+  width: 14%
+  text-align:center
+
+.tag
+  text-decoration: none
+  font-family: 'Amatic SC', cursive
+  font-size: 30px
+
+a
+  color: #63666b
+
+a:visited
+  color: #63666b
+
+a:hover
+  color: #d6bcc8
