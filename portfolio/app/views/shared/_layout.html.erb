@@ -20,3 +20,20 @@
 
   </div>
 </div>
+
+
+<script type="text/javascript">
+    $('body').ready(function() { 
+
+        $('img').hide();
+        $('img').each(function(i) {
+            if (this.complete) {
+                $(this).fadeIn(1000);
+            } else {
+                $(this).load(function() {
+                    $(this).fadeIn(1000);
+                });
+            }
+        });
+    });
+</script>

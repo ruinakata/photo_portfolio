@@ -16,6 +16,10 @@ class PhotosController < ApplicationController
 
   def index
     @photos = Photo.all
+    @photos = @photos.reverse
+    @photos.each do |x|
+      puts "#{x.title}"
+    end
     @tags = tags_to_show
   end
 

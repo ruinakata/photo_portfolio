@@ -15,6 +15,7 @@ class TagsController < ApplicationController
         @photos << photo
       end
     end
+    @photos = @photos.reverse
   end
 
 end
