@@ -11,7 +11,7 @@ module TagsToShowConcern
     tags = Tag.all
     # hardcoding allowed tags for now until they fill up
     # remove from here down and update tags=Tag.all to @tags=Tag.all
-    tags_to_show = ["dogs", "sweet", "savory", "portrait", "scenery"]
+    tags_to_show = ["dogs", "sweet", "savory", "portrait", "scenery", "foodstyling"]
     @tags = []
     tags.each do |tag|
       if tags_to_show.include?(tag.name)
